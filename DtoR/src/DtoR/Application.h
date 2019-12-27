@@ -9,10 +9,10 @@ namespace dtor {
 		Application();
 		virtual ~Application();
 
-		void Run();
+		void run();
 	};
 
 	// To be defined by the client
-	Application* CreateApplication();
+	Application* createApplication();
 
 } // namespace dtor

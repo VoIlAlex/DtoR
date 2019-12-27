@@ -4,6 +4,7 @@ class Sandbox : public dtor::Application
 {
 public:
 	Sandbox()
+		: dtor::Application()
 	{
 
 	}
@@ -15,7 +16,7 @@ public:
 };
 
 
-dtor::Application* dtor::CreateApplication()
+dtor::Application* dtor::createApplication()
 {
 	return new Sandbox();
 }

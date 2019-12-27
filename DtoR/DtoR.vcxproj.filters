@@ -27,9 +27,15 @@
     <ClInclude Include="src\DtoR\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\DtoR\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DtoR\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DtoR\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

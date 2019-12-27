@@ -2,12 +2,16 @@
 
 #ifdef DTOR_PLATFORM_WINDOWS
 
-extern dtor::Application* dtor::CreateApplication();
+extern dtor::Application* dtor::createApplication();
 
 int main(int argc, char ** argv)
 {
-	auto app = dtor::CreateApplication();
-	app->Run();
+	dtor::Log::init();
+	DTOR_CORE_INFO("Loggers was initialized.");
+
+
+	auto app = dtor::createApplication();
+	app->run();
 	delete app;
 }
 
